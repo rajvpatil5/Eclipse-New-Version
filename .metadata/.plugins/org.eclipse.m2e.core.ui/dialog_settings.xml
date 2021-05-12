@@ -25,13 +25,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="demo.websocket"/>
 		</list>
 		<list key="groupId">
-			<item value="demo"/>
 		</list>
 		<list key="artifactId">
-			<item value="websocket"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

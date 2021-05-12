@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Join Meetings]">
+  <test thread-count="1" parallel="tests" name="Test0(failed)">
+    <parameter name="fname" value="Rajat1"/>
+    <parameter name="lname" value="Patil1"/>
+    <parameter name="gender" value="Male"/>
+    <parameter name="phone" value="8149915224"/>
+    <parameter name="mname" value="Vasant1"/>
+    <parameter name="email" value="1rajvpatil5@gmail.com"/>
+    <parameter name="age" value="27"/>
+    <classes>
+      <class name="demo.test.DemoTest">
+        <methods>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- demo.test.DemoTest -->
+    </classes>
+  </test> <!-- Test0(failed) -->
+</suite> <!-- Failed suite [Join Meetings] -->

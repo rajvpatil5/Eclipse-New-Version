@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Join Meetings]">
+  <listeners>
+    <listener class-name="com.syscort.util.ExtentReport"/>
+    <listener class-name="com.syscort.util.Listen"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Test8(failed)">
+    <parameter name="cardCVV" value="176"/>
+    <parameter name="cardPin" value="3553"/>
+    <parameter name="amount" value="10"/>
+    <parameter name="phone" value="9090121212"/>
+    <parameter name="cardNumbers" value="8172450173213135"/>
+    <parameter name="cardHolderName" value="211168131274"/>
+    <parameter name="email" value="test@syscort.com"/>
+    <parameter name="cardExp" value="10/22"/>
+    <classes>
+      <class name="com.syscort.test.TestPayment">
+        <methods>
+          <include name="setupWebDriver"/>
+          <include name="cleanup"/>
+          <include name="createTransactionSheet"/>
+          <include name="paymentTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.syscort.test.TestPayment -->
+    </classes>
+  </test> <!-- Test8(failed) -->
+  <test thread-count="2" parallel="tests" name="Test9(failed)">
+    <parameter name="cardCVV" value="706"/>
+    <parameter name="cardPin" value="5941"/>
+    <parameter name="amount" value="10"/>
+    <parameter name="phone" value="9090121212"/>
+    <parameter name="cardNumbers" value="8172450173213457"/>
+    <parameter name="cardHolderName" value="211168131274"/>
+    <parameter name="email" value="test@syscort.com"/>
+    <parameter name="cardExp" value="10/22"/>
+    <classes>
+      <class name="com.syscort.test.TestPayment">
+        <methods>
+          <include name="setupWebDriver"/>
+          <include name="cleanup"/>
+          <include name="createTransactionSheet"/>
+          <include name="paymentTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.syscort.test.TestPayment -->
+    </classes>
+  </test> <!-- Test9(failed) -->
+</suite> <!-- Failed suite [Join Meetings] -->
