@@ -46,8 +46,10 @@
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Hp\eclipse-workspace-new"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
 		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="ExecutePaymentTest (1) - Syscort"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Hp\Desktop\LoookitP\Test.jar"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Hp\Desktop\Syscort\Test.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Hp\Desktop\Syscort\Test.jar"/>
+			<item value="C:\Users\Hp\Desktop\ATOM\AtomTest.jar"/>
 			<item value="C:\Users\Hp\Desktop\LoookitP\Test.jar"/>
 			<item value="C:\Users\Hp\Desktop\LoookitP\LoadTestP.jar"/>
 		</list>

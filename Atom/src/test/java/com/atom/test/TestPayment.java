@@ -5,7 +5,6 @@ import static org.testng.Assert.assertTrue;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -50,7 +49,6 @@ public class TestPayment extends TestSetup {
 	public void paymentTest(String name, String email, String phone, String amount, String cardNumbers,
 			String cardExpMonth, String cardExpYear, String cardHolderName, String cardCVV, String cardPin,
 			String cardBankName) {
-		String cardExpYear1 = "20" + cardExpYear;
 		try {
 
 			driver.get(rc.url);
@@ -82,7 +80,7 @@ public class TestPayment extends TestSetup {
 			new Select(driver.findElement(AtomTestPage.cardExpiryMonth)).selectByValue(cardExpMonth);
 
 			assertTrue(driver.findElement(AtomTestPage.cardExpiryYear).isDisplayed());
-			new Select(driver.findElement(AtomTestPage.cardExpiryYear)).selectByValue(cardExpYear1);
+			new Select(driver.findElement(AtomTestPage.cardExpiryYear)).selectByValue("20" + cardExpYear);
 
 			assertTrue(driver.findElement(AtomTestPage.cardCvv).isDisplayed());
 			driver.findElement(AtomTestPage.cardCvv).sendKeys(cardCVV);

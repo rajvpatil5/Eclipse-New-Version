@@ -1,6 +1,5 @@
 package com.atom.execute;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,12 +8,10 @@ import org.testng.collections.Lists;
 import org.testng.xml.XmlClass;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlSuite.ParallelMode;
+import org.testng.xml.XmlTest;
 
-import com.atom.pages.AtomTestPage;
 import com.atom.util.ReadConfig;
 import com.atom.util.ReadExcel;
-
-import org.testng.xml.XmlTest;
 
 public class ExecutePaymentTest {
 	ReadExcel readExcel = new ReadExcel();
@@ -31,8 +28,8 @@ public class ExecutePaymentTest {
 		TestNG testNG = new TestNG();
 		testNG.setXmlSuites(suites);
 		for (int i = 0; i < suites.size(); i++) {
-			System.out.println(suites.get(i).toXml());
-			System.out.println("==================");
+//			System.out.println(suites.get(i).toXml());
+//			System.out.println("==================");
 		}
 		testNG.run();
 	}
